@@ -12,7 +12,7 @@ locals {
 
   basic_auth_docker_labels = {
     enabled = {
-      "traefik.frontend.auth.basic" = "${var.dashboard_basic_auth_user}:${var.dashboard_basic_auth_password}"
+      "traefik.frontend.auth.basic.users" = "${var.dashboard_basic_auth_user}:${var.dashboard_basic_auth_password}"
     }
     disabled = {}
   }
